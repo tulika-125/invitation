@@ -66,7 +66,7 @@ export const HostsSection: React.FC = () => {
       relation: '🤝 Brothers',
       icon: '🤝',
       message:
-        'The countdown has officially begun! We are ready with the grand Baraat celebration at Shakuntala Udyan and welcoming our dearest Bhabhi home with open arms!',
+        'The countdown has officially begun! We are ready with the grand Baraat celebration and welcoming our dearest Bhabhi home with open arms!',
       highlight: false,
     },
     {
@@ -229,9 +229,6 @@ export const HostsSection: React.FC = () => {
                   <p className="font-serif text-xs sm:text-sm text-[#240308]">
                     • <strong>Little Stars:</strong> Sneha, Tulika, Shreyash, Shanvi, Sankalp, Reyansh, Shaurya
                   </p>
-                  <div className="mt-3 pt-2 border-t border-[#d4af37]/30 text-center font-serif text-xs text-[#6e1122] font-semibold">
-                    Reception Venue: Jeera Udyan, Barada Bhawan, Birsanagar, Jamshedpur
-                  </div>
                 </div>
               </div>
             </div>

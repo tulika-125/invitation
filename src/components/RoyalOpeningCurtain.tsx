@@ -89,7 +89,7 @@ export const RoyalOpeningCurtain: React.FC<RoyalOpeningCurtainProps> = ({ onOpen
         </h1>
 
         <p className="text-xs sm:text-sm text-[#e6c280] font-sans tracking-widest mt-1 mb-6">
-          25th November 2026 • Jamshedpur
+          25th November 2026
         </p>
 
         <div className="h-px w-32 mx-auto bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mb-6" />

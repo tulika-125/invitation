@@ -118,16 +118,10 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Date & Location Pill */}
-        <div className="inline-flex flex-wrap items-center justify-center gap-3 sm:gap-6 px-6 py-2.5 rounded-full bg-[#1b0306]/80 border border-[#d4af37]/40 shadow-lg text-xs sm:text-sm text-[#f5e8c7] font-serif mb-6">
-          <div className="flex items-center gap-1.5 text-[#ffd700]">
-            <Calendar className="w-4 h-4" />
-            <span className="font-semibold tracking-wider">Wednesday, 25th November 2026</span>
-          </div>
-          <span className="text-[#d4af37] hidden sm:inline">•</span>
-          <div className="flex items-center gap-1.5 text-[#e6c280]">
-            <span>Shakuntala Udyan & Jeera Udyan, Barada Bhawan, Jamshedpur</span>
-          </div>
+        {/* Auspicious Date Pill */}
+        <div className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[#1b0306]/80 border border-[#d4af37]/40 shadow-lg text-xs sm:text-sm text-[#f5e8c7] font-serif mb-6">
+          <Calendar className="w-4 h-4 text-[#ffd700]" />
+          <span className="font-semibold tracking-wider text-[#ffd700]">Wednesday, 25th November 2026</span>
         </div>
 
         {/* Wedding Hashtag */}
