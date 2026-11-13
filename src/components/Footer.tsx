@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
 
   const handleShareWhatsApp = () => {
     const text = encodeURIComponent(
-      "🌸 Wedding Invitation 🌸\n\nMr. & Mrs. Dhirendranath Mahato request the pleasure of your company on the auspicious marriage ceremony of their only son\n\n💍 ANUJ KUMAR MAHATO weds ANUPAMA MAHATO 💍\n\n🗓️ Date: 25th & 26th November 2026\n📍 Venue: Shakuntala Udyan & Guriya Maidan, Birsanagar, Jamshedpur\n\nView the full royal card, directions & send your blessings:\n" +
+      "🌸 Wedding Invitation 🌸\n\nMr. & Mrs. Dhirendranath Mahato request the pleasure of your company on the auspicious marriage ceremony of their only son\n\n💍 ANUJ KUMAR MAHATO weds ANUPAMA MAHATO 💍\n\n🗓️ Date: 25th & 26th November 2026\n📍 Venue: Shakuntala Udyan & Jeera Udyan (Barada Bhawan), Birsanagar, Jamshedpur\n\nView the full royal card, directions & send your blessings:\n" +
         window.location.href
     );
     window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');

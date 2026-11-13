@@ -44,7 +44,7 @@ export const EventsSection: React.FC = () => {
       subtitle: 'Grand Celebration, Blessings & Royal Feast (Priti Bhoj)',
       dateStr: 'Thursday, 26th November 2026',
       timeStr: '07:30 PM Onwards',
-      venueName: 'Guriya Maidan',
+      venueName: 'Jeera Udyan, Barada Bhawan',
       venueAddress: 'Birsanagar, Jamshedpur, East Singhbhum',
       dressCode: 'Elegant Formal Indian & Indo-Western Attire',
     },

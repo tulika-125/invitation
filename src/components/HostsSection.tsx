@@ -1,58 +1,82 @@
 import React, { useState } from 'react';
-import { Phone, Users, Sparkles, Heart, FileText, Check, Star } from 'lucide-react';
+import { Phone, Users, Sparkles, Heart, FileText, Check, Star, MessageCircleHeart } from 'lucide-react';
 
 export const HostsSection: React.FC = () => {
   const [showTraditionalCard, setShowTraditionalCard] = useState(false);
 
-  // All 17 RSVP family members explicitly categorized
-  const allRsvpNames = [
-    'Pitambar',
-    'Ranjan',
-    'Deepak',
-    'Sanjay',
-    'Debashish',
-    'Goutam',
-    'Kabita',
-    'Susmita',
-    'Banashree',
-    'Tanushree',
-    'Sneha',
-    'Tulika',
-    'Shreyash',
-    'Shanvi',
-    'Sankalp',
-    'Reyansh',
-    'Shaurya',
-  ];
-
-  const familyGroups = [
+  // All Family Well-Wishes & RSVP merged together
+  const familyBlessingsAndRsvp = [
     {
-      group: 'Pillars of the Family',
-      icon: '🏛️',
-      tagline: 'Guiding Wisdom & Strength',
-      badgeColor: 'from-amber-600/30 to-amber-900/40 border-amber-500/50 text-[#ffd700]',
-      members: ['Pitambar', 'Ranjan', 'Deepak', 'Sanjay'],
+      id: 'parents-groom',
+      names: 'Mr. Dhirendranath Mahato & Mrs. Anita Mahato',
+      relation: 'Groom’s Loving Parents',
+      icon: '🪷',
+      message:
+        'May Lord Ganesha always bestow peace, prosperity, and boundless happiness upon our beloved children Anuj and Anupama. Welcome to our family, dear Anupama!',
+      highlight: true,
     },
     {
-      group: 'Brothers',
+      id: 'parents-bride',
+      names: 'Mr. Sanjay Kumar Mahato & Mrs. Rubi Mahato',
+      relation: 'Bride’s Proud Parents',
+      icon: '🪷',
+      message:
+        'Wishing Anuj and our darling daughter Anupama a lifetime of pure devotion, laughter, and unbreakable harmony. Always keep smiling together.',
+      highlight: true,
+    },
+    {
+      id: 'kabita-pitambar',
+      names: 'Kabita & Pitambar',
+      relation: 'Family & Best Compliments',
+      icon: '🌟',
+      message:
+        'Warmest blessings and heartfelt congratulations to Anuj & Anupama! May you walk through life hand-in-hand with immense prosperity, strength, and boundless joy.',
+      highlight: false,
+    },
+    {
+      id: 'susmita-ranjan',
+      names: 'Susmita & Ranjan',
+      relation: 'Family & Best Compliments',
+      icon: '🌟',
+      message:
+        'Wishing dearest Anuj and Anupama a lifetime filled with sweet laughter, deep understanding, and everlasting togetherness. Heartiest congratulations!',
+      highlight: false,
+    },
+    {
+      id: 'banashree-deepak',
+      names: 'Banashree & Deepak',
+      relation: 'Family & Best Compliments',
+      icon: '🌟',
+      message:
+        'May your sacred bond grow stronger and sweeter with every passing day. Heartiest congratulations and a very warm welcome to our family, dear Anupama!',
+      highlight: false,
+    },
+    {
+      id: 'tanushree-sanjay',
+      names: 'Tanushree & Sanjay',
+      relation: 'Family & Best Compliments',
+      icon: '🌟',
+      message:
+        'May your wedding ceremony be the beginning of a lifetime filled with wonderful moments, everlasting love, and joyous milestones together!',
+      highlight: false,
+    },
+    {
+      id: 'brothers',
+      names: 'Debashish, Goutam & Rahul',
+      relation: '🤝 Brothers',
       icon: '🤝',
-      tagline: 'Enduring Bond & Warmth',
-      badgeColor: 'from-rose-800/30 to-rose-950/40 border-rose-500/50 text-[#fbf5b7]',
-      members: ['Debashish', 'Goutam'],
+      message:
+        'The countdown has officially begun! We are ready with the grand Baraat celebration at Shakuntala Udyan and welcoming our dearest Bhabhi home with open arms!',
+      highlight: false,
     },
     {
-      group: 'Sisters',
-      icon: '🌸',
-      tagline: 'Grace, Care & Affection',
-      badgeColor: 'from-pink-800/30 to-pink-950/40 border-pink-400/50 text-[#fceda6]',
-      members: ['Kabita', 'Susmita', 'Banashree', 'Tanushree'],
-    },
-    {
-      group: 'Little Stars',
+      id: 'little-stars',
+      names: 'Sneha, Tulika, Shreyash, Shanvi, Sankalp, Reyansh & Shaurya',
+      relation: '✨ Little Stars',
       icon: '✨',
-      tagline: 'The Sunshine & Joy of the House',
-      badgeColor: 'from-yellow-700/30 to-amber-950/40 border-yellow-400/50 text-[#fff2a8]',
-      members: ['Sneha', 'Tulika', 'Shreyash', 'Shanvi', 'Sankalp', 'Reyansh', 'Shaurya'],
+      message:
+        'Congratulations Anuj Mamu & Anupama Mami! We are so excited for all the sweets, music, celebrations, and dancing at the wedding!',
+      highlight: false,
     },
   ];
 
@@ -61,6 +85,10 @@ export const HostsSection: React.FC = () => {
       id="family"
       className="relative py-24 px-4 bg-gradient-to-b from-[#250308] via-[#35060e] to-[#1a0205] text-[#f7eedc] overflow-hidden"
     >
+      {/* Anchor targets so any links to #blessings or #rsvp seamlessly land here */}
+      <div id="blessings" className="absolute -top-12" />
+      <div id="rsvp" className="absolute -top-12" />
+
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.12)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto">
@@ -68,12 +96,12 @@ export const HostsSection: React.FC = () => {
         <div className="text-center max-w-2xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-[#420a13] border border-[#d4af37]/40 text-[#ffd700] text-xs uppercase tracking-[0.25em] font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5 text-[#ffd700]" />
-            <span>Kutumb & Compliments</span>
+            <span>Kutumb, R.S.V.P. & Blessings</span>
             <Sparkles className="w-3.5 h-3.5 text-[#ffd700]" />
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl text-white font-bold tracking-tight mb-4">
-            Hosts & R.S.V.P.
+            Hosts, Family & Well Wishes
           </h2>
 
           <div className="flex items-center justify-center gap-3">
@@ -83,7 +111,7 @@ export const HostsSection: React.FC = () => {
           </div>
 
           <p className="mt-4 text-sm sm:text-base text-[#ebd498]/90 font-serif italic">
-            "With the heartfelt warmth and affectionate invitation from every single member of the Mahato family."
+            "With the heartfelt warmth, affectionate invitations, and eternal blessings from our cherished family."
           </p>
         </div>
 
@@ -100,7 +128,7 @@ export const HostsSection: React.FC = () => {
           </h3>
 
           <p className="font-serif italic text-sm sm:text-base text-[#ebd498]/90 max-w-2xl mx-auto mb-8 leading-relaxed">
-            "Your gracious presence, warm wishes, and blessings will illuminate this auspicious milestone for our son Anuj and our daughter Anupama."
+            "Your gracious presence and warm blessings will illuminate this auspicious milestone for our son Anuj and our daughter Anupama."
           </p>
 
           {/* Contact Numbers with Direct Click-to-Call */}
@@ -123,7 +151,7 @@ export const HostsSection: React.FC = () => {
           </div>
         </div>
 
-        {/* 2. R.S.V.P. Grand Family Section — ALL NAMES FULLY CATEGORIZED */}
+        {/* 2. Unified R.S.V.P. & Family Well-Wishes Container */}
         <div className="rounded-3xl bg-[#28050c]/90 border-2 border-[#d4af37]/50 p-6 sm:p-10 shadow-2xl relative overflow-hidden">
           {/* Header */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-[#d4af37]/30 mb-8">
@@ -133,10 +161,10 @@ export const HostsSection: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-serif text-2xl sm:text-3xl text-[#fdf4c9] font-bold tracking-widest uppercase">
-                  R. S. V. P.
+                  R. S. V. P. & Shubh Sandesh
                 </h4>
                 <p className="text-xs text-[#d4af37] font-sans tracking-wider">
-                  Pillars • Brothers • Sisters • Little Stars
+                  Cordially Welcoming You with Warm Well Wishes
                 </p>
               </div>
             </div>
@@ -184,69 +212,85 @@ export const HostsSection: React.FC = () => {
                     — R. S. V. P. —
                   </p>
                   <p className="font-serif text-xs sm:text-sm text-[#240308]">
-                    <strong>🏛️ Pillars:</strong> Pitambar, Ranjan, Deepak, Sanjay
+                    • <strong>Kabita & Pitambar</strong>
                   </p>
                   <p className="font-serif text-xs sm:text-sm text-[#240308]">
-                    <strong>🤝 Brothers:</strong> Debashish, Goutam
+                    • <strong>Susmita & Ranjan</strong>
                   </p>
                   <p className="font-serif text-xs sm:text-sm text-[#240308]">
-                    <strong>🌸 Sisters:</strong> Kabita, Susmita, Banashree, Tanushree
+                    • <strong>Banashree & Deepak</strong>
                   </p>
                   <p className="font-serif text-xs sm:text-sm text-[#240308]">
-                    <strong>✨ Little Stars:</strong> Sneha, Tulika, Shreyash, Shanvi, Sankalp, Reyansh, Shaurya
+                    • <strong>Tanushree & Sanjay</strong>
                   </p>
+                  <p className="font-serif text-xs sm:text-sm text-[#240308]">
+                    • <strong>Brothers:</strong> Debashish, Goutam, Rahul
+                  </p>
+                  <p className="font-serif text-xs sm:text-sm text-[#240308]">
+                    • <strong>Little Stars:</strong> Sneha, Tulika, Shreyash, Shanvi, Sankalp, Reyansh, Shaurya
+                  </p>
+                  <div className="mt-3 pt-2 border-t border-[#d4af37]/30 text-center font-serif text-xs text-[#6e1122] font-semibold">
+                    Reception Venue: Jeera Udyan, Barada Bhawan, Birsanagar, Jamshedpur
+                  </div>
                 </div>
               </div>
             </div>
           )}
 
-          {/* Highlighted Full Names Ribbon (All 17 Names) */}
+          {/* Highlighted Full Names Ribbon */}
           <div className="mb-10 p-5 rounded-2xl bg-[#390812]/80 border border-[#d4af37]/40 text-center">
             <p className="text-[11px] uppercase tracking-[0.25em] text-[#d4af37] font-semibold mb-2 flex items-center justify-center gap-1.5">
               <Star className="w-3.5 h-3.5 text-[#ffd700] fill-current" />
-              <span>Complete Roll of Honor ({allRsvpNames.length} Family Members)</span>
+              <span>The Complete Family Roll of Honor</span>
               <Star className="w-3.5 h-3.5 text-[#ffd700] fill-current" />
             </p>
             <p className="font-serif text-sm sm:text-base text-[#fef9e7] leading-relaxed font-semibold">
-              Pitambar • Ranjan • Deepak • Sanjay • Debashish • Goutam • Kabita • Susmita • Banashree • Tanushree • Sneha • Tulika • Shreyash • Shanvi • Sankalp • Reyansh • Shaurya
+              Kabita & Pitambar • Susmita & Ranjan • Banashree & Deepak • Tanushree & Sanjay • Debashish • Goutam • Rahul • Sneha • Tulika • Shreyash • Shanvi • Sankalp • Reyansh • Shaurya
             </p>
           </div>
 
-          {/* Categorized Royal Sections with User's Exact Groups */}
-          <div className="space-y-10">
-            {familyGroups.map((grp) => (
-              <div key={grp.group} className="rounded-2xl p-5 bg-[#340710]/60 border border-[#d4af37]/25">
-                {/* Category Header */}
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-3 border-b border-[#d4af37]/20">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xl select-none">{grp.icon}</span>
-                    <h5 className="font-serif text-lg sm:text-xl font-bold text-[#ffd700] tracking-wide">
-                      {grp.group}
-                    </h5>
+          {/* Merged Family Cards: Names + Well-Wishes in One Unified Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+            {familyBlessingsAndRsvp.map((item) => (
+              <div
+                key={item.id}
+                className={`group relative p-6 sm:p-7 rounded-2xl transition-all duration-300 flex flex-col justify-between ${
+                  item.highlight
+                    ? 'bg-gradient-to-b from-[#440b16] to-[#29050c] border-2 border-[#ffd700]/70 shadow-[0_0_25px_rgba(212,175,55,0.25)]'
+                    : 'bg-gradient-to-b from-[#340710]/80 to-[#1f0308]/90 border border-[#d4af37]/35 hover:border-[#ffd700] shadow-lg hover:shadow-2xl'
+                }`}
+              >
+                {/* Corner ornament */}
+                <div className="absolute top-2.5 right-3 text-[#d4af37]/40 text-xs font-serif select-none">❧</div>
+
+                <div>
+                  <div className="flex items-start gap-3.5 mb-3">
+                    <div className="w-10 h-10 rounded-full bg-[#520c1a] border border-[#d4af37]/50 flex items-center justify-center text-lg shrink-0 shadow-inner group-hover:scale-105 transition-transform">
+                      {item.icon}
+                    </div>
+                    <div>
+                      <h4 className="font-serif text-lg sm:text-xl font-bold text-[#fdf4c9] group-hover:text-[#ffd700] transition-colors leading-tight">
+                        {item.names}
+                      </h4>
+                      <p className="text-xs font-sans font-semibold text-[#d4af37] mt-0.5">
+                        {item.relation}
+                      </p>
+                    </div>
                   </div>
-                  <span className="text-[11px] font-serif italic text-[#ebd498]/80">
-                    {grp.tagline}
-                  </span>
+
+                  <div className="h-px w-full bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent my-3.5" />
+
+                  <p className="font-serif italic text-xs sm:text-sm text-[#f5eedf]/90 leading-relaxed">
+                    "{item.message}"
+                  </p>
                 </div>
 
-                {/* Member Cards */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
-                  {grp.members.map((name) => (
-                    <div
-                      key={name}
-                      className="group relative p-3.5 rounded-xl bg-gradient-to-b from-[#3e0914] to-[#200308] border border-[#d4af37]/30 hover:border-[#ffd700] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all duration-300 text-center flex flex-col items-center justify-center cursor-default hover:scale-105"
-                    >
-                      <div className="w-8 h-8 mb-2 rounded-full bg-[#520c1a] border border-[#d4af37]/40 flex items-center justify-center text-xs font-serif font-bold text-[#ffd700] group-hover:scale-110 transition-transform shadow-inner">
-                        {name.charAt(0)}
-                      </div>
-                      <span className="font-serif text-base font-bold text-[#fef9e7] group-hover:text-[#ffd700] transition-colors leading-tight">
-                        {name}
-                      </span>
-                      <span className="text-[9px] uppercase tracking-wider text-[#d4af37]/75 mt-1 font-medium">
-                        Mahato
-                      </span>
-                    </div>
-                  ))}
+                <div className="mt-4 pt-3 border-t border-[#d4af37]/20 flex items-center justify-between text-[11px] text-[#ebd498]/75">
+                  <span className="flex items-center gap-1 text-[#ffd700]">
+                    <MessageCircleHeart className="w-3.5 h-3.5" />
+                    <span>Family Blessing</span>
+                  </span>
+                  <span className="font-serif text-[#ffd700]/90 font-medium">Mahato Parivar</span>
                 </div>
               </div>
             ))}
@@ -257,7 +301,7 @@ export const HostsSection: React.FC = () => {
             <div className="flex items-center gap-2">
               <Check className="w-4 h-4 text-[#ffd700]" />
               <span className="font-semibold text-[#fdf4c9]">
-                All {allRsvpNames.length} family members warmly welcoming you
+                All family members and well-wishes united with love
               </span>
             </div>
 

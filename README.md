@@ -7,13 +7,13 @@ A breathtaking, cinematic, and responsive royal Indian wedding invitation web ex
 ---
 
 ## 💍 The Couple
-- **Groom**: Anuj Kumar Mahato *(Son of Mr. Dhirendranath Mahato & Mrs. Anita Mahato, Barada Bhawan, Birsanagar, Jamshedpur)*
-- **Bride**: Anupama Mahato *(Daughter of Mr. Sanjay Kumar Mahato & Mrs. Rubi Mahato, Chakradharpur)*
+- **Groom**: Anuj Kumar Mahato *(Son of Mr. Dhirendranath Mahato & Mrs. Anita Mahato)*
+- **Bride**: Anupama Mahato *(Daughter of Mr. Sanjay Kumar Mahato & Mrs. Rubi Mahato)*
 
 ## 🗓️ Ceremonial Schedule
 - **Haldi Ceremony**: Wednesday, 25th November 2026 (Morning Auspicious Hours)
 - **Marriage Ceremony (Vivah Utsav)**: Wednesday, 25th November 2026 at **Shakuntala Udyan, Zone no. 8, Birsanagar**
-- **Reception & Dinner (Priti Bhoj)**: Thursday, 26th November 2026 at **Guriya Maidan, Birsanagar, Jamshedpur**
+- **Reception & Dinner (Priti Bhoj)**: Thursday, 26th November 2026 at **Jeera Udyan, Barada Bhawan, Birsanagar, Jamshedpur**
 
 ## 🏛️ Kutumb & R.S.V.P. Roll of Honor
 - **With Best Compliments from**: Mr. Dhirendranath Mahato and family *(Tel: +91 8210986292, 0657-3589708)*

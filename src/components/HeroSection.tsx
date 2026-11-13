@@ -126,7 +126,7 @@ export const HeroSection: React.FC = () => {
           </div>
           <span className="text-[#d4af37] hidden sm:inline">•</span>
           <div className="flex items-center gap-1.5 text-[#e6c280]">
-            <span>Shakuntala Udyan & Guriya Maidan, Jamshedpur</span>
+            <span>Shakuntala Udyan & Jeera Udyan, Barada Bhawan, Jamshedpur</span>
           </div>
         </div>
 

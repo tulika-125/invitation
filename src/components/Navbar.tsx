@@ -17,8 +17,7 @@ export const Navbar: React.FC = () => {
     { label: 'Home', href: '#hero' },
     { label: 'The Couple', href: '#couple' },
     { label: 'Events & Itinerary', href: '#events' },
-    { label: 'Wall of Blessings', href: '#blessings' },
-    { label: 'Family & Hosts', href: '#family' },
+    { label: 'Family & Blessings', href: '#family' },
   ];
 
   const handleShare = () => {
@@ -83,11 +82,11 @@ export const Navbar: React.FC = () => {
           </button>
 
           <a
-            href="#blessings"
+            href="#family"
             className="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-[#d4af37] to-[#b8860b] text-[#240308] font-bold text-xs uppercase tracking-wider hover:brightness-110 shadow-md transition-all cursor-pointer"
           >
             <Heart className="w-3 h-3 fill-current" />
-            <span>Blessings</span>
+            <span>Family & Wishes</span>
           </a>
         </div>
 
@@ -127,11 +126,11 @@ export const Navbar: React.FC = () => {
             ))}
             <div className="pt-2 flex flex-col gap-3">
               <a
-                href="#blessings"
+                href="#family"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full text-center py-2.5 rounded-full bg-gradient-to-r from-[#d4af37] to-[#b8860b] text-[#240308] font-bold text-xs uppercase tracking-widest shadow-md"
               >
-                View Wall of Blessings
+                View Family & Well Wishes
               </a>
             </div>
           </div>

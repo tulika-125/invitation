@@ -6,7 +6,6 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { CoupleSection } from './components/CoupleSection';
 import { EventsSection } from './components/EventsSection';
-import { RSVPSection } from './components/RSVPSection';
 import { HostsSection } from './components/HostsSection';
 import { Footer } from './components/Footer';
 
@@ -41,10 +40,7 @@ export const App: React.FC = () => {
         {/* Wedding Events & Itinerary */}
         <EventsSection />
 
-        {/* RSVP & Wall of Blessings */}
-        <RSVPSection />
-
-        {/* Hosts & Compliments */}
+        {/* Unified Hosts, Family & Well Wishes */}
         <HostsSection />
       </main>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Users, Heart, Sparkles } from 'lucide-react';
+import { Users, Heart, Sparkles } from 'lucide-react';
 
 export const CoupleSection: React.FC = () => {
   return (
@@ -65,43 +65,25 @@ export const CoupleSection: React.FC = () => {
                   <h3 className="font-serif text-2xl sm:text-3xl text-[#3b070f] font-bold tracking-wide">
                     Anuj Kumar Mahato
                   </h3>
-                  <p className="text-xs uppercase tracking-[0.25em] text-[#b89326] font-semibold mt-1">
-                    Barada Bhawan • Birsanagar
-                  </p>
                 </div>
 
                 <div className="h-px w-24 mx-auto bg-gradient-to-r from-transparent via-[#d4af37] to-transparent my-6" />
 
                 {/* Parentage & Heritage */}
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-[#faf5ee] border border-[#ebd498]/40">
-                    <div className="p-2 rounded-lg bg-[#3b070f] text-[#fdf4c9] shrink-0 mt-0.5">
-                      <Users className="w-4 h-4" />
+                  <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-[#faf5ee] border border-[#ebd498]/50 shadow-sm">
+                    <div className="p-2.5 rounded-xl bg-[#3b070f] text-[#fdf4c9] shrink-0 mt-0.5 shadow">
+                      <Users className="w-5 h-5" />
                     </div>
                     <div>
-                      <p className="text-[11px] uppercase tracking-wider text-[#735a54] font-semibold">
+                      <p className="text-[11px] uppercase tracking-wider text-[#735a54] font-semibold mb-1">
                         Cherished Son of
                       </p>
-                      <p className="font-serif text-base text-[#240308] font-bold">
+                      <p className="font-serif text-lg text-[#240308] font-bold leading-snug">
                         Mr. Dhirendranath Mahato
                       </p>
-                      <p className="font-serif text-base text-[#240308] font-bold">
+                      <p className="font-serif text-lg text-[#240308] font-bold leading-snug">
                         & Mrs. Anita Mahato
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Residence */}
-                  <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-[#faf5ee] border border-[#ebd498]/40">
-                    <div className="p-2 rounded-lg bg-[#3b070f] text-[#fdf4c9] shrink-0 mt-0.5">
-                      <MapPin className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <p className="text-[11px] uppercase tracking-wider text-[#735a54] font-semibold">
-                        Family Residence
-                      </p>
-                      <p className="text-sm font-sans text-[#33221e] leading-snug font-medium">
-                        Barada Bhawan, H.no. 241, Zone no. 1, Birsanagar, Jamshedpur, East Singhbhum, Jharkhand
                       </p>
                     </div>
                   </div>
@@ -146,43 +128,25 @@ export const CoupleSection: React.FC = () => {
                   <h3 className="font-serif text-2xl sm:text-3xl text-[#3b070f] font-bold tracking-wide">
                     Anupama Mahato
                   </h3>
-                  <p className="text-xs uppercase tracking-[0.25em] text-[#b89326] font-semibold mt-1">
-                    Potka Mahatosai • Chakradharpur
-                  </p>
                 </div>
 
                 <div className="h-px w-24 mx-auto bg-gradient-to-r from-transparent via-[#d4af37] to-transparent my-6" />
 
                 {/* Parentage & Heritage */}
                 <div className="space-y-4">
-                  <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-[#faf5ee] border border-[#ebd498]/40">
-                    <div className="p-2 rounded-lg bg-[#6e1122] text-[#fdf4c9] shrink-0 mt-0.5">
-                      <Users className="w-4 h-4" />
+                  <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-[#faf5ee] border border-[#ebd498]/50 shadow-sm">
+                    <div className="p-2.5 rounded-xl bg-[#6e1122] text-[#fdf4c9] shrink-0 mt-0.5 shadow">
+                      <Users className="w-5 h-5" />
                     </div>
                     <div>
-                      <p className="text-[11px] uppercase tracking-wider text-[#735a54] font-semibold">
+                      <p className="text-[11px] uppercase tracking-wider text-[#735a54] font-semibold mb-1">
                         Beloved Daughter of
                       </p>
-                      <p className="font-serif text-base text-[#240308] font-bold">
+                      <p className="font-serif text-lg text-[#240308] font-bold leading-snug">
                         Mr. Sanjay Kumar Mahato
                       </p>
-                      <p className="font-serif text-base text-[#240308] font-bold">
+                      <p className="font-serif text-lg text-[#240308] font-bold leading-snug">
                         & Mrs. Rubi Mahato
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Residence */}
-                  <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-[#faf5ee] border border-[#ebd498]/40">
-                    <div className="p-2 rounded-lg bg-[#6e1122] text-[#fdf4c9] shrink-0 mt-0.5">
-                      <MapPin className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <p className="text-[11px] uppercase tracking-wider text-[#735a54] font-semibold">
-                        Family Residence
-                      </p>
-                      <p className="text-sm font-sans text-[#33221e] leading-snug font-medium">
-                        Potka Mahatosai, Chakradharpur, West Singhbhum, Jharkhand
                       </p>
                     </div>
                   </div>
