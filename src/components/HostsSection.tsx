@@ -8,7 +8,7 @@ export const HostsSection: React.FC = () => {
   const familyBlessingsAndRsvp = [
     {
       id: 'parents-groom',
-      names: 'Mr. Dhirendranath Mahato & Mrs. Anita Mahato',
+      names: 'Mr. Dhirendra Nath Mahato & Mrs. Anita Mahato',
       relation: 'Groom’s Loving Parents',
       icon: '🪷',
       message:
@@ -124,7 +124,7 @@ export const HostsSection: React.FC = () => {
           </p>
 
           <h3 className="font-serif text-3xl sm:text-5xl text-[#fdf4c9] font-bold tracking-wide mb-3">
-            Mr. Dhirendranath Mahato and Family
+            Mr. Dhirendra Nath Mahato and Family
           </h3>
 
           <p className="font-serif italic text-sm sm:text-base text-[#ebd498]/90 max-w-2xl mx-auto mb-8 leading-relaxed">
@@ -190,7 +190,7 @@ export const HostsSection: React.FC = () => {
                   Shree Vivah Nimantran Patrika
                 </h5>
                 <p className="text-xs sm:text-sm font-serif italic text-[#4a3530] leading-relaxed">
-                  Mr. & Mrs. Dhirendranath Mahato request the pleasure of your company on the auspicious occasion of the marriage ceremony of their only son <strong>Anuj Kumar Mahato</strong> with <strong>Anupama Mahato</strong> (Daughter of Mr. Sanjay Kumar Mahato & Mrs. Rubi Mahato) on Wednesday, 25th November 2026.
+                  Mr. & Mrs. Dhirendra Nath Mahato request the pleasure of your company on the auspicious occasion of the marriage ceremony of their only son <strong>Anuj Kumar Mahato</strong> with <strong>Anupama Mahato</strong> (Daughter of Mr. Sanjay Kumar Mahato & Mrs. Rubi Mahato) on Wednesday, 25th November 2026.
                 </p>
 
                 <div className="h-px w-32 mx-auto bg-[#b89326]" />
@@ -200,7 +200,7 @@ export const HostsSection: React.FC = () => {
                     With Best Compliments From:
                   </p>
                   <p className="font-serif text-sm font-bold text-[#240308]">
-                    Mr. Dhirendranath Mahato and family
+                    Mr. Dhirendra Nath Mahato and family
                   </p>
                   <p className="text-xs text-[#523d38]">
                     Tel: 8210986292, 0657-3589708

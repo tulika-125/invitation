@@ -80,7 +80,7 @@ export const CoupleSection: React.FC = () => {
                         Cherished Son of
                       </p>
                       <p className="font-serif text-lg text-[#240308] font-bold leading-snug">
-                        Mr. Dhirendranath Mahato
+                        Mr. Dhirendra Nath Mahato
                       </p>
                       <p className="font-serif text-lg text-[#240308] font-bold leading-snug">
                         & Mrs. Anita Mahato

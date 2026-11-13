@@ -1,13 +1,13 @@
 # 🌸 Anuj & Anupama — Royal Wedding Celebration
 
-> *“Mr. & Mrs. Dhirendranath Mahato request the pleasure of your company on the auspicious occasion of the marriage ceremony of their only son **Anuj Kumar Mahato** with **Anupama Mahato**”*
+> *“Mr. & Mrs. Dhirendra Nath Mahato request the pleasure of your company on the auspicious occasion of the marriage ceremony of their only son **Anuj Kumar Mahato** with **Anupama Mahato**”*
 
 A breathtaking, cinematic, and responsive royal Indian wedding invitation web experience designed with rich traditional aesthetics, gold foil accents, deep velvet maroon, festive celebratory music, falling rose petals, and family honor rolls.
 
 ---
 
 ## 💍 The Couple
-- **Groom**: Anuj Kumar Mahato *(Son of Mr. Dhirendranath Mahato & Mrs. Anita Mahato)*
+- **Groom**: Anuj Kumar Mahato *(Son of Mr. Dhirendra Nath Mahato & Mrs. Anita Mahato)*
 - **Bride**: Anupama Mahato *(Daughter of Mr. Sanjay Kumar Mahato & Mrs. Rubi Mahato)*
 
 ## 🗓️ Ceremonial Schedule
@@ -16,7 +16,7 @@ A breathtaking, cinematic, and responsive royal Indian wedding invitation web ex
 - **Reception & Dinner (Priti Bhoj)**: Thursday, 26th November 2026 at **Jeera Udyan, Barada Bhawan, Birsanagar, Jamshedpur**
 
 ## 🏛️ Kutumb & R.S.V.P. Roll of Honor
-- **With Best Compliments from**: Mr. Dhirendranath Mahato and family *(Tel: +91 8210986292, 0657-3589708)*
+- **With Best Compliments from**: Mr. Dhirendra Nath Mahato and family *(Tel: +91 8210986292, 0657-3589708)*
 - **R. S. V. P.**:
   - **🏛️ Pillars of the Family**: Pitambar, Ranjan, Deepak, Sanjay
   - **🤝 Brothers**: Debashish, Goutam

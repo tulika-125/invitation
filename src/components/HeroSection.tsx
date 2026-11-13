@@ -84,13 +84,13 @@ export const HeroSection: React.FC = () => {
         </div>
 
         <p className="text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#e6c280]/80 font-sans mb-6">
-          Dhirendranath Mahato & Family Cordially Presents
+          Dhirendra Nath Mahato & Family Cordially Presents
         </p>
 
         {/* The Formal Invitation Line */}
         <div className="max-w-2xl px-4 py-3 rounded-xl bg-[#230308]/60 border border-[#d4af37]/20 backdrop-blur-sm mb-8">
           <p className="font-serif italic text-sm sm:text-base lg:text-lg text-[#f7eedc] leading-relaxed">
-            “Mr. & Mrs. Dhirendranath Mahato request the pleasure of your company on the auspicious occasion of the marriage ceremony of their only son”
+            “Mr. & Mrs. Dhirendra Nath Mahato request the pleasure of your company on the auspicious occasion of the marriage ceremony of their only son”
           </p>
         </div>
 
