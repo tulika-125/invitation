@@ -56,7 +56,7 @@ export const CoupleSection: React.FC = () => {
                   <img
                     src="./anuj.jpeg"
                     alt="Anuj Kumar Mahato - The Groom"
-                    className="w-full h-full rounded-full object-cover object-top shadow-inner border-2 border-[#d4af37]/60"
+                    className="w-full h-full rounded-full object-cover object-center shadow-inner border-2 border-[#d4af37]/60"
                     loading="lazy"
                   />
                 </div>
